@@ -1,0 +1,27 @@
+﻿@using TopOrder.Entitites
+@{
+    ViewData["Title"] = "Create order";
+}
+
+@model CreateOrderViewModel
+
+<h4>Create order</h4>
+
+<div>
+    <form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="CreateOrder">
+
+        <div class="form-group mb-3">
+            <label asp-for="CustomerName" class="form-label"></label>
+            <input asp-for="CustomerName" class="form-control" />
+            <span asp-validation-for="CustomerName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mb-3">
+            <label asp-for="Amount" class="form-label"></label>
+            <input asp-for="Amount" class="form-control" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create order</button>
+    </form>
+</div>
