@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<TopOrderContext>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddTransient<IStatusRepository, StatusRepository>();
-builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddScoped<IStatusRepository, StatusRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

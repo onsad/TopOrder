@@ -36,7 +36,8 @@ namespace TopOrder.DAL
                     new Order { Amount = 2000, CustomerName = "Customer 2", StatusId = 2, Id = 2, Date = DateTime.Now.AddDays(-300) },
                     new Order { Amount = 10000, CustomerName = "Customer 2", StatusId = 3, Id = 3, Date = DateTime.Now.AddDays(-30) },
                     new Order { Amount = 40000, CustomerName = "Customer 3", StatusId = 2, Id = 4, Date = DateTime.Now.AddDays(-30) },
-                    new Order { Amount = 40000, CustomerName = "Customer 4", StatusId = 2, Id = 5, Date = DateTime.Now.AddDays(-31) }
+                    new Order { Amount = 40000, CustomerName = "Customer 4", StatusId = 2, Id = 5, Date = DateTime.Now.AddDays(-31) },
+                    new Order { Amount = 5500, CustomerName = "Customer 5", StatusId = 2, Id = 6, Date = DateTime.Now.AddDays(-100) }
                     );
             });
         }
